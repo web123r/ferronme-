@@ -1,15 +1,94 @@
 <!DOCTYPE html>
-<html lang="en-US">
 <head>
+<html lang="en-US">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title >Next</title>
     <style>
-
+    
+         div {
+            background-color: blue;
+            background-image: url(img/horse.gif);
+            
+            width: 70 inherit ;
+            height: 600px;
+            background-repeat: no-repeat;
+          
+            background-size: 100% 100%;
+         }
+         table ,tr ,td ,th  {
+            border: 1px solid white;
+            border-collapse: collapse;
+            border-radius: 10px;
+            border-style: solid;
+            text-align: center;
+            border-spacing: 300px;
+         }
+         th, td {
+            background-color: aqua;
+         }
+           
     </style>
 </head>
 <body>
-    
+    <a href="index.html#Ferronme"><h1>Jump to Ferronme </h1></a>
+<button   onclick=indexFunction()>Go to Index 
+
+    </button> </a>
+    <script>
+        function indexFunction (){
+     document.location='index.html ';
+        }
+    </script>
+  
+     <button   onclick=anotherFunction()>Go to Another 
+     
+         </button> </a>
+         <script>
+             function anotherFunction (){
+          document.location='another .html ';
+             }
+         </script>
+
+    <div>
+       
+    </div>
+    <h1>The <q>Name </q>in the table covers two columns due to the <q>colspan </q> property 
+     <strong>N/B the <q>colspan</q> property is set to 2 ,that's it covers two columns </strong> </h1>
+     <h1>The <q>Ferronme </q>in the table covers two rows due to the <q>rowspan </q> property 
+        <strong>N/B the <q>rowspan</q> property is set to 2 ,that's it covers two rows </strong> </h1>
+    <table style="width: 70%;">
+        <caption>MY FIRST TABLE </caption>
+        <tr style="height: 200px;">
+            <th colspan="2" style="width: 70%;">Name</th>
+            <th>Age</th>
+           
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Ferronme</td>
+            <td>Oluwatayo</td>
+            <td>15</td>
+            <td>Canada</td>
+            <tr>
+                <td>Simbi</td>
+                <td>Oluwatayo</td>
+                <td>14</td>
+                <td>America</td>
+                <tr>
+                    <td rowspan="2">Ferronme</td>
+                    <td>Oluwatayo</td>
+                    <td>15</td>
+                    <td>Canada</td>
+        </tr>
+        <tr>
+            <td>Oluwatayo</td>
+            <td>32</td>
+            <td>Germany</td>
+        </tr>
+
+
+
 </body>
 </html>

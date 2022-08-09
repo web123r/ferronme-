@@ -6,11 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my web site </title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        a:visited{
+            color: pink;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        
+        a:link{
+            color: green;
+            background-color: transparent ;
+            text-decoration: none;
+        }
+        a:hover{
+            color: red;
+            background-color: transparent;
+            text-decoration: none;
+
+        }
+        a:active {
+            color: yellow;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+
+
+    </style>
 </head>
 <body>
     <!-- This is a comment , it will not be displayed in a web browser-->
     <!-- This program was written by Oluwatayo Isaac in 2022-->
-    <p title="I am a title "> This is Ferronme  </p>
+    <button onclick="document.location='another.html '">Go to Another </button>
+    <h1 id="Ferronme" title="I am a title " style="font-size: 500%;"> This is Ferronme  </h1>
     <h1 style="color:aquamarine ;">This is a header1</h1>
     <hr>
     <h2 style="font-family: Verdana, Geneva, Tahoma, sans-serif;" 
@@ -41,6 +69,42 @@
              <h4 style="color: hsl(120, 100%, 50%) ;">This green color was gotten by combining hex values  <ins>
                 #00ff00 </ins> </h4>
                 <h4 style="background-color: #C8A2C8;">this has a background color of lilac</h4>
+                <!--this is another comment-->
+                <a href="next.html" target="_blank">This link opens ina new tab because the <q>target</q>
+                attribute is set to _blank</a> <br>
+                <a href="next.html" target="_top"><img src="img/profile.jpg" alt="picture of  a beautiful girl 
+                    " style="width: 42px; height: 42px; "></a> <h3>this image is a link </h3>
+                    <a href="mailto:lacuisineduroyale@gmail.com" title="Message la cuisine " >  <i> Tap this link to message lacuisine</i>  </a>
+                    <button onclick="document.location = 'next.html '"></button><br>
+                    <h1><img src="img/about.jpg" alt="Another image of a girl" style="float: left;width:42px;height:42px;">the image is
+                  at the  left of the text using the <q>float</q>property</h1>
+                    <a style="font-size: 500%;" href="#Ferronme"> Jump to this is ferronme</a>
+                    <img src="img/carousel-2.jpg" alt="my map" usemap="#image-map"  >
+                  
 
-</body>
+<map name="image-map">
+    <area target="_blank" alt="phone" title="phone" href="next.html" coords="559,559,834,510" shape="rect" onclick="phoneFunction()">
+    <area target="_blank" alt="vase1" title="vase1" href="next.html" coords="0,285,187,266,194,327,176,403,142,485,0,516,4,315,0,301,5,289,0,326" shape="poly" onclick="vaseFunction()">
+
+</map>>
+<script>
+    function vaseFunction(){
+        alert("You have clicked the bigger vase")
+    }
+    function phoneFunction(){
+        alert("You have clicked the iphone ")
+    }
+</script>
+<h1>If you try to click the bigger vase or the phone in the picture <ins>above</ins> , it 
+    will take you to <q>next.html</q>
+</h1>
+<div style="background-color: blue; width:inherit; height: 450px; background-image: url(img/carousel-2.jpg); background-size: cover;background-repeat: no-repeat
+; background-attachment: fixed ;" ></div>
+<picture>
+   
+   <source media="(min-width: 650px)" srcset="blog-4.jpg">
+   <source media="(min-width: 465px)" srcset="blog-4.jpg">
+   <img src="img/blog-4.jpg" alt="picture of a woman holding a phone ">
+</picture>
+    </body>
 </html> 
