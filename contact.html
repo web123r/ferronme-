@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div  id="demo" style="background-color: grey;"> THIS IS WHERE THE DATE WILL BE DISPLAYED  </div>
+    <button type="button" onclick=dateButton()> Click me to display your date and time !!!</button>
+    <p>the button changes the background color, color of the <q>div</q> above using JAVASCRIPT </p>
     <h1 class="header" >This is a header 1 </h1>
     <a class="mainButton" title="this button causes the header above to disappear" onclick="myFunction()"href="">DISAPPEAR</a> 
     <script>
@@ -23,9 +26,23 @@
         function changeName(){
             document.getElementsByClassName("mainButton").innerHTML = "Reappear ";
         }
+        function dateButton (){
+            document.getElementById('demo').innerHTML= Date();
+            document.getElementById('demo').style.backgroundColor= "black";
+            document.getElementById('demo').style.color= "white";
+
+
+        }
+        function changeImage (){
+            document.getElementById("image").src= "3.gif ";
+        }
     </script>
     <div  class="iframe "><iframe  name="iframe_a" style="width: inherit;"  src=" index.html" frameborder="0" title="This is a demo iframe "></iframe></div>
     <p><a href="https://www.youtube.com/embed/DEkq69spFPk" target="iframe_a"> this  is a link </a></p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/DEkq69spFPk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <img id="image" src="img/animated-sorry-and-apology-image-0082.gif" alt="gif saying sorry"> 
+    <button type="button" onclick="cchangeImage() ">This button changes the image above </button>
+    
 </body>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/DEkq69spFPk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 </html>
