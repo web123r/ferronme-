@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>another </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="header" >This is a header 1 </h1>
+    <a class="mainButton" title="this button causes the header above to disappear" onclick="myFunction()"href="">DISAPPEAR</a> 
+    <script>
+        function myFunction(){
+            var x = document.getElementsByClassName("header")
+            for(var s = 0; s < x.length ; s++){
+                x[s].style.display = "none";
+                changeName();
+                
+
+            }
+        }
+        function changeName(){
+            document.getElementsByClassName("mainButton").innerHTML = "Reappear ";
+        }
+    </script>
+    <div class="iframe "><iframe src=" index.html" frameborder="0" title="This is a demo iframe "></iframe></div>
+    
+</body>
+</html>

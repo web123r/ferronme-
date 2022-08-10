@@ -5,27 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <style>
+
+    .logo{
+        overflow: auto;
+    }
     table ,tr,td ,th {
-        border: 1px solid black;
+      border: 1px solid black;
         border-collapse: collapse;
     }
-    tr :nth-child(even){
+    tr:nth-child(even){
         background-color: rgba(150, 212, 212,0.4);
     }
    
-    th :nth-child(even ),td :nth-child(even ) {
+    th:nth-child(even ),td:nth-child(even ) {
         background-color: rgba(150, 212, 212,0.4);
     }
+    
+    .logo {
+        
+        width: 450px;
+        height: 70px ;
+    }
+
 </style>
 <body>
+    <div class="logo">
+      <p style="font-size:300%;"> LA CUISINE <span style="color: #00ff00;">DU </span> ROYALE </p>
+    </div>
     
-</table>
+
 <table style="width: 70%;">
     <caption>MY SECOND TABLE </caption>
-    <tr style="height: 200px;">
-        <th  style="width: 70%;">Name</th>
+    <colgroup>
+    <col span="2" style="background-color :brown;">
+    <col span="2" style="width: 300px;">
+</colgroup>
+    <tr >
+        <th  >Name</th>
         <th>Class</th>
         <th>Age</th>
        
@@ -60,5 +79,61 @@
 
 
 </table>
+
+<table style="width: 70%;">
+    <caption>MY SECOND TABLE </caption>
+    <tr class="newtr" >
+        <th  >Name</th>
+        <th>Class</th>
+        <th>Age</th>
+       
+        <th>Country</th>
+    </tr>
+    <tr class="newtr">
+        <td>Ferronme</td>
+        <td>Oluwatayo</td>
+        <td>15</td>
+        <td>Canada</td>
+    </tr>
+        <tr class="newtr">
+            <td>Simbi</td>
+            <td>Oluwatayo</td>
+            <td>14</td>
+            <td>America</td>
+        </tr>
+            <tr class="newtr">
+                <td >Ferronme</td>
+                <td>Oluwatayo</td>
+                <td>15</td>
+                <td>Canada</td>
+            </tr>
+   
+    <tr class="newtr">
+        <td>Darasimi  </td>
+        <td>Oluwatayo</td>
+        <td>32</td>
+        <td>Germany</td>
+    </tr>
+       
+
+
+
+</table>
+
+<ol type="1" start="50">
+    <li>Ferronme Oluwatayo</li>
+    <li>Darasimi Oluwatayo</li>
+    <li>Daddy Oluwatayo
+    </li>
+    <li>Mommy Oluwatayo</li>
+    <dd> The list is marked 1 to 10 because i changed the type attribute to 1 </dd>
+</ol>
+
+
+
+
+
+
+
 </body>
 </html>

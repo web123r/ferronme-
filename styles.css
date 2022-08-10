@@ -1,0 +1,27 @@
+.newtr {
+    border-bottom: 1px solid black;
+}
+.iframe{
+    width: 200px;
+    height: 200px  ;
+}
+.apology {
+    font-size: 500%;
+    color: red;
+
+}
+.onesorry{
+    width: 500px;
+    height: 500px;
+    background-image: url(img/3.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.twosorry{
+    width: 800px;
+    height: 500px;
+    background-image: url(img/animated-sorry-and-apology-image-0082.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
