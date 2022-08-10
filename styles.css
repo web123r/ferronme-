@@ -2,8 +2,9 @@
     border-bottom: 1px solid black;
 }
 .iframe{
-    width: 200px;
+    width: 600px;
     height: 200px  ;
+    border: none;
 }
 .apology {
     font-size: 500%;
